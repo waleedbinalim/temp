@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(236, 236, 236);
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  min-height: 80px;
+  align-items: center;
+  background-color: #181616;
+}
+
+.logo{
+  min-height: inherit;
+  padding: 10px 18px;
+
+  /* FOR POSITIONING */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  display: grid;
+  place-items: center;
+}
+
+.App-logo{
+  height: 60px;
+  object-fit: cover;
+}
+
+.nav-links{
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  min-height: inherit;
+  align-items: center;
+  /* width: 30%; */
+  /* height: 80px; */
+  /* padding: 15px; */
+}
+
+.nav-links li{
+  padding: 20px;
+  font-weight: 600;
+  color: rgb(228, 228, 228);
+  min-height: inherit;
+
+  display: grid;
+  place-items: center;
+}
+
+.nav-links a{
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+.nav-links .link:hover{
+  background-color: #4bc334ff;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.login-section{
+  height: auto;
+  padding: 0px 20px;
+  display: flex;
+}
+
+.login-section li{
+  list-style-type: none;
+}
+
+.button{
+  margin: 0px 10px 0px 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #282e26;
+  color: rgb(236, 231, 231);
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+/* HOMEPAGE */
+.homepage-image-wrapper{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/4604599/pexels-photo-4604599.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage-overlay{
+  position: absolute;
+  background: #0000008f;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-text{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+
+/* COURIER PAGE */
+
+.courier-image-wrapper{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/2047397/pexels-photo-2047397.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.courier-block{
+  background: rgb(255, 251, 251);
+  border: solid 3px rgb(224, 183, 191);
+  border-radius: 20px;
+  padding: 25px 15px 25px 35px;
+  margin: 20px 80px;
+  min-height: 100px;
+}
+
+.courier-block-button{
+  margin: 0px 10px;
+}
+
+
+.person-name{
+  text-transform: uppercase;
+  padding: 0px 0px 20px 0px;
+}
+
+.person-details{
+  font-size: large;
+}
+.parcel-name{
+  text-transform: uppercase;
+  padding: 0px 0px 20px 0px;
+}
+
+.parcel-details{
+  font-size: large;
+}
+
+.edit-button{
+  margin: 10px 10px 0px 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #3533cf;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-button-container{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.register-button{
+  /* margin: 10px 10px; */
+  margin-top: 10px;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #3110c5;
+  color: #fff;
+  font-size: larger;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.delete-button{
+  margin: 10px 10px 0px 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #db2b2b;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* ABOUT PAGE */
+
+.about-image-wrapper{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/4246112/pexels-photo-4246112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-overlay{
+  position: absolute;
+  background: #0000008f;
+  width: 100%;
+  height: 100%;
+}
+
+.about-text{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FORM */
+form{
+  display: grid;
+  place-items: center;
+}
+
+.modal-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.other-form{
+  padding: 50px;
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/4498152/pexels-photo-4498152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+  background-size: cover;
+  /* background-color: rgb(255, 255, 255); */
+  display: grid;
+  place-items: center;
+}
+
+.other-form form{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 60%;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+}
+
+
+.modal-form{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding: 50px;
+  min-width: 30%;
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 10%;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  min-width: 50%;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.other-form .form-submit-button{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: 700;
+  background-color: #3110c5;
+}
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
